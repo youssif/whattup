@@ -11,15 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
+  <div class="field" id="short">
+    <%= f.label "Name of the spot" %><br />
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label "Spot Summary" %><br />
     <%= f.text_area :description %>
   </div>
+
+<!-- need to save input fields and output them later -->
+   <div class="field" id = "short">
+    <%= f.label "Awesomeness score out of 10 (10 being mind-hemmorhagingly amazing)" %><br />
+    <%= f.text_field :name %>
+  </div>
+
+<!-- need to save input fields and output them later -->
+  <div class = "field" id = "short">
+     <%= f.label "Are you a noob or vet?" %><br />
+    <%= f.text_field :name %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+
+  
 <% end %>
