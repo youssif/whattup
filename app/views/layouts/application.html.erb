@@ -3,12 +3,25 @@
 <head>
   <title>Whattup</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link rel = "stylesheet" href = "http://railsgirls.com/assets/bootstrap.css"
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class = "navbar navbar-fixed=top">
+	<div class = "navbar-inner">
+		<div class = "container">
+			<a class = "brand" href = "/">Whatelp?</a>
+			<ul class = "nav">
+				<li class = "active"><a href = "/recs">Rec's</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
+<div class = "container"> <%= yield %> </div>
+
+<footer><div class = "container"></div></footer>
 </body>
 </html>
